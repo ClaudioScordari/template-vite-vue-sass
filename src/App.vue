@@ -8,7 +8,7 @@ import { store } from './store.js';
 export default {
     data(){
         return {
-            store // in questo caso il nome della chiave, e i nome del valore della chiave coincidono... quindi si può lasciare store
+            store // in questo caso il nome della chiave, e il nome del valore della chiave coincidono... quindi si può lasciare store
         }
     },
     components: {
