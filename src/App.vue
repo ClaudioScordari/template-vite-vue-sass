@@ -2,6 +2,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
+import axios from "axios";
 
 export default {
     data(){
@@ -16,6 +17,13 @@ export default {
     },
     methods: {
 
+    },
+    mounted(){
+        axios
+            .get('url')
+            .then((response) => {
+
+            });
     }
 }
 </script>
@@ -35,6 +43,6 @@ export default {
 <!-- ------------------------------------------------------------------------------- -->
 
 <style lang="scss">
+// RESET DI BOOTSTRAP
 @use './assets/scss/main.scss' as *;
-@import 'assets/scss/partials/reset.scss';
 </style>
